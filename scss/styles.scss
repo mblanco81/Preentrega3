@@ -1,0 +1,424 @@
+@mixin sizes-icon($width, $height) {
+	height: $height;
+	width: $width;
+}
+$bckgcolor:black;
+
+* {
+    padding: 0px;
+    top: 0px;
+    background-color: $bckgcolor;
+}
+
+header {
+    grid-area: header;
+    background-color: $bckgcolor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .container {
+        background-color: $bckgcolor;
+    }
+}
+.navbar {
+	li{	
+	
+		transition: transform .3s;
+		/*efecto al pasar el mouse por encima*/
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+} 
+
+.body_servicios {
+    margin-top: 150px;
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    h6 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+}
+
+.body_index {
+    background-color: $bckgcolor;
+    margin-top: 200px;
+    padding-bottom: 50px;
+
+    .img-izq {
+        margin-bottom: 40px;
+        float: right;
+    }
+
+    p {
+        color: whitesmoke;
+    }
+
+    .cardsservicios {
+        background-color: $bckgcolor;
+        padding: 0%;
+    }
+
+    .card {
+        background-color: $bckgcolor;
+        margin-left: auto;
+        justify-content: center;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    h6 {
+        color: white;
+    }
+}
+
+.formulario {
+    background-color: $bckgcolor;
+    padding-bottom: 50px;
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h6 {
+        color: white;
+    }
+}
+
+/*página contacto*/
+
+.body_contacto {
+    background-color: $bckgcolor;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h6 {
+        color: white;
+    }
+}
+
+details {
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+summary {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18;
+    list-style: none;
+}
+
+.respuesta {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14;
+}
+
+summary::before {
+    content: '+';
+    padding-right: 1rem;
+}
+
+.img-fluid {
+    text-align: center;
+}
+
+.container-servicios {
+    margin-top: 350px;
+
+    text-align: center;
+    margin-left: 150px;
+    padding-bottom: 50px;
+}
+
+.parrafo {
+    margin-left: 50px;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    background-color: $bckgcolor;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.footer {
+    background-color: $bckgcolor;
+
+    img{
+        @include sizes-icon(35px,35px );
+        transition: transform .3s;
+    }
+
+    text-align: center;
+    align-content: center;
+
+    li {
+        list-style-type: none;
+    }
+
+    h3 {
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    h6 {
+        color: white;
+    }
+
+    .links {
+
+        margin-top: 20px;
+        img{
+            @include sizes-icon(35px,35px );
+            transition: transform .3s;
+        }
+
+    }
+
+    .redes {
+        img{
+            @include sizes-icon(35px,35px );
+            transition: transform .3s;
+        }
+        margin-top: 20px;
+    }
+}
+
+
+
+.imagen {
+    margin-top: 10px;
+}
+
+
+
+.item_contact {
+    margin-top: 10px;
+
+}
+
+.info {
+    margin-top: 20px;
+}
+
+
+
+.contacto {
+    margin-top: 150px;
+    text-align: center;
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h6 {
+        color: white;
+    }
+}
+
+.body_taller {
+    height: 100%;
+    margin-top: 200px;
+}
+
+.historia {
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h6 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+}
+
+
+
+.faq {
+    margin-top: 175px;
+    background-color: $bckgcolor;
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h6 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+
+}
+
+div.parrafos1 {
+    display: flex;
+}
+
+div.parrafos img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+div.parrafos2 {
+    display: flex;
+}
+
+div.parrafos2 img.derecha {
+    float: right;
+    margin-left: 15px;
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+}
+
+.parrafos1 izquierda {
+    float: left;
+    margin-right: 15px;
+    border-radius: 10%;
+    margin-bottom: 50px;
+
+}
+
+div.parrafos3 {
+    display: flex;
+}
+
+.mapa {
+    size: auto;
+}
+
+.parrafos3 {
+    float: left;
+    margin-right: 15px;
+    border-radius: 10%;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.izquierda {
+    float: left;
+
+    text-align: center;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 10%;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.derecha {
+    float: right;
+    text-align: center;
+    justify-content: center;
+
+    margin-right: 15px;
+    border-radius: 10%;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
+}
